@@ -33,8 +33,12 @@ return new Promise((resolve, reject)=>{
 });
 });};
 
+function getAllPlanets(){
+    return habitablePlanets;
+}
+
 module.exports = {
-    planets: habitablePlanets,
-    loadPlanetsData
+    getAllPlanets,
+    loadPlanetsData,
 };
 
